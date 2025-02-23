@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Site</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1em 0;
+        }
+        main {
+            padding: 2em;
+        }
+        button {
+            padding: 1em;
+            font-size: 1em;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Static Site com Nginx ,Node e Docker</h1>
+    </header>
+    <main>
+        <p>Click para ver a Mensagem:</p>
+        <button onclick="showMessage()">Click</button>
+        <p id="message"></p>
+    </main>
+    <script>
+        function showMessage() {
+            document.getElementById('message').innerText = 'Olá, Esse site está rodando na porta 3000!';
+        }
+    </script>
+</body>
+</html>
