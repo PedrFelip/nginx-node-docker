@@ -1,0 +1,15 @@
+{
+    "name": "nginx-node-docker",
+    "version": "1.0.0",
+    "description": "Projeto para aprender alguns conceitos do nginx",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "author": "Pedro Felipe",
+    "license": "MIT",
+    "dependencies": {
+        "express": "^4.17.1",
+        "path": "0.12.7"
+    }
+} 
